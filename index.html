@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#176b5f">
+    <title>PPL Workout Logger</title>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <p class="eyebrow">PPL Logger</p>
+        <h1 id="screen-title">Today</h1>
+      </header>
+      <section id="notice" class="notice hidden" aria-live="polite"></section>
+      <section id="app" class="screen" aria-live="polite"></section>
+      <nav class="bottom-nav" aria-label="Primary">
+        <button class="nav-button active" type="button" data-screen="today">Today</button>
+        <button class="nav-button" type="button" data-screen="templates">Templates</button>
+        <button class="nav-button" type="button" data-screen="export">Export</button>
+      </nav>
+    </main>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
