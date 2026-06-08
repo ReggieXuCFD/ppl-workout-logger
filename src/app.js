@@ -368,7 +368,8 @@ function localDateString() {
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/service-worker.js").catch(() => {});
+    const serviceWorkerUrl = new URL("../service-worker.js", import.meta.url);
+    navigator.serviceWorker.register(serviceWorkerUrl).catch(() => {});
   }
 }
 

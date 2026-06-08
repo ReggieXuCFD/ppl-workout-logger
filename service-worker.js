@@ -1,15 +1,15 @@
-const CACHE_NAME = "ppl-workout-logger-v2";
+const CACHE_NAME = "ppl-workout-logger-v3";
 const ASSETS = [
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/src/defaults.js",
-  "/src/model.js",
-  "/src/exporters.js",
-  "/src/storage.js",
-  "/src/app.js",
-  "/manifest.webmanifest",
-  "/icon.svg"
+  "./",
+  "./index.html",
+  "./styles.css",
+  "./src/defaults.js",
+  "./src/model.js",
+  "./src/exporters.js",
+  "./src/storage.js",
+  "./src/app.js",
+  "./manifest.webmanifest",
+  "./icon.svg"
 ];
 
 self.addEventListener("install", (event) => {
